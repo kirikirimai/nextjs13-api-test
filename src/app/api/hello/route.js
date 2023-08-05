@@ -12,7 +12,7 @@ import { NextRequest } from "next/server"
 export async function POST(request) {
 
   const body =await request.json()
-  const returnBody =`POSTで受け取った値：${body.name}`
+  const returnBody =`：${body.name}のテキストはAPIのPOSTメソッドで受け取りました。`
 
   return new Response(JSON.stringify({ body:returnBody}))
 }
